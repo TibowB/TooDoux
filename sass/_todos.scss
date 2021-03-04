@@ -1,0 +1,94 @@
+.todos {
+  margin-top: 4em;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid#000;
+    @media screen and (max-width: 599px) {
+      font-size: 1.6em;
+    }
+  }
+  &__new {
+    width: 60%;
+    @media screen and (max-width: 599px) {
+      width: 80%;
+    }
+    form {
+      margin: 1em 1em;
+      padding: 1em 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &--label {
+      text-align: center;
+      font-size: 1.4rem;
+      @media screen and (max-width: 599px) {
+        font-size: 1.2rem;
+      }
+    }
+    &--input {
+      height: 2rem;
+      font-size: 1rem;
+      margin: 1em auto;
+      width: 60%;
+      border: none;
+      border-bottom: 2px solid #000;
+      &:focus {
+        outline: none;
+      }
+    }
+    &--submit {
+      text-transform: uppercase;
+      width: 50%;
+      cursor: pointer;
+      font-size: 0.8rem;
+      padding: 1rem 1rem;
+      border: 2px solid #000;
+      background-color: #fff;
+      border-radius: 30px;
+      &:hover {
+        transition: all 400ms ease;
+        color: #fff;
+        background-color: #000;
+      }
+    }
+  }
+  &__single {
+    background-color: rgba($color: #000000, $alpha: 0.15);
+    margin: 0.2rem auto;
+    border-radius: 10px;
+    width: 40%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    text-align: center;
+    @media screen and (max-width: 599px) {
+      width: 80%;
+    }
+    input[type="submit"] {
+      cursor: pointer;
+      font-size: 1rem;
+      padding: 0.2rem 0.2rem;
+      border: none;
+      background-color: #fff;
+      border-radius: 10%;
+      box-shadow: 0 0 2rem 0.5em rgba($color: #000000, $alpha: 0.15);
+      &:hover {
+        transition: all 400ms ease;
+        color: #fff;
+        background-color: red;
+      }
+    }
+  }
+}

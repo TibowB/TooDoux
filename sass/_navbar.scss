@@ -1,0 +1,35 @@
+.navbar {
+  width: 100%;
+  height: 4em;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  h1 {
+    font-weight: 500;
+    @media screen and (max-width: 599px) {
+      font-size: 1.5rem;
+    }
+  }
+  span {
+    display: flex;
+    p,
+    a {
+      margin: 0 1em;
+      @media screen and (max-width: 599px) {
+        font-size: 0.8rem;
+      }
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+      &:hover {
+        transition: color 100ms ease;
+        color: lightcoral;
+      }
+    }
+  }
+}
